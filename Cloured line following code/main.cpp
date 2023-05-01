@@ -214,7 +214,7 @@ void yellowline()
     cv::imshow("Yellowline", image_YELLOW);
     yellowpixels = countNonZero(image_YELLOW);
     std::cout << "Yellow pixels = " << yellowpixels << std::endl;
-    if (yellowpixels > 100)
+    if (yellowpixels > 1000)
     {
     image_YELLOW = image;
     linefollowing();
